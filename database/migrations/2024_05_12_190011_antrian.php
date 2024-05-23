@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('antrian', function (Blueprint $table) {
            $table->id();
            $table->string('no_antrian', 45);
-           $table->string('status_antrian');
+           $table->string('status_antrian' 45);
            $table->unsignedBigInteger('pasien_id');
            $table->unsignedBigInteger('dokter_id');
            $table->foreign('pasien_id')->references('id')->on('pasien');
